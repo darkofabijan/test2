@@ -1,7 +1,7 @@
 version: "v3.0"
 name: My first pipeline
 semaphore_image: standard
-blocks:
+pipeline:
   - name: "Stage 1 1️⃣"
     build:
       prologue:
@@ -22,6 +22,7 @@ blocks:
           - pwd
           - echo "test"
           - ls /etc
+          - ls sdfsdfsdf
 
       - name: List files
         commands:
